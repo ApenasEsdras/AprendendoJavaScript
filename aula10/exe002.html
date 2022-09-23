@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Numeros</title>
+
+    <style>
+        body{
+            font: normal 18pt Arial;
+            background: rgb(175, 144, 206);
+        }
+        input{
+            font: normal 20pt Arial;
+            width: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Somando Numeros</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+</body>
+
+<!-- JavaScript -->
+    <Script>
+
+        function somar(){
+            var tn1 = document.getElementById('txtn1')//modulo de chamda antigo
+            var tn2 = document.querySelector('input#txtn2')//modulo de chamda mais atualizado
+            var res = document.getElementById('res')//chamda do res ID
+            var n1 = Number(tn1.value)//converção
+            var n2 = Number(tn2.value)//converção
+            var s = n1 + n2 //soma dos elementos obtidos no input
+            res.innerHTML = `A soma de ${n1} + ${n2} foi de ${s}` //chamada do 'res'
+        }
+
+    </Script>
+
+</html>

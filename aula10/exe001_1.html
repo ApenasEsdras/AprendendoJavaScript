@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupulando o DOM (Com getElement)</title>
+
+    <!-- CSS -->
+    <style>
+        div#area {
+            background: #d8b1ff;
+            color: aliceblue;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;/*Mesma Autura*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+            var a = document.getElementById('area')//scopo global
+        function clicar(){
+            // mudar conteudo 
+            a.innerText = 'Clicou'
+            a.style.background = 'blue'
+        }
+        function entrar(){
+            a.innerText = 'Entrou'
+        }
+        function sair(){
+            a.innerText = 'Saiu'
+            a.style.background = '#d8b1ff'
+        }
+    </script>
+</body>
+</html>

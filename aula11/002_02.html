@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <p>Seu país 
+            <input type="text" name="Pais" id="Pais">
+            <input type="button" value="Calcular" onclick="meuPais()">
+        </p>
+        <div id="PaisOrigem"> Seu País é</div>
+    </h1>
+
+    <script>
+        function meuPais(){
+            var pais = document.getElementById('Pais')
+            var PaisOrigem1 = document.getElementById('PaisOrigem')
+            console.log('OK')
+
+            // var pais = 'Brasil'
+            if(pais !== 'Brasil'){
+                PaisOrigem1.innerHTML += `<P>Seu País de origem é ${pais}</p>`
+            }else{
+                PaisOrigem1.innerHTML += `vc é estrangeiro`
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 006</title>
+
+    <style>
+        body{
+            background-color: rgb(134, 134, 189);
+            color: aliceblue;
+            font: normal 18px arial;
+        }
+    </style>
+</head>
+
+<h1>Iniciando estudo no DOM</h1>
+<br>
+<p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+<br>
+<div id="msg">Clique em mim </div>
+<body>
+
+    <script>
+
+        // window.document.write(window.navigator.appName)
+        
+        // window.document.write(window.document.URL)
+
+
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]//chamada da teg 'P'
+        document.write('Esta escrito assim: ' + p1.innerText)//exibir texto
+        corpo.style.background = 'black'
+        p1.style.color = 'blue'//autera a cor da letra atravez do DOM
+
+        document.write(p1.innerHTML)//puxar teg comm formatação do HTML
+        document.write(p1.innerText)//texto sem formatação
+
+        var d = window.document.getElementById('msg')
+        d.innerText = 'Mundo o conteudo...'
+        d.style.color= 'red'
+       
+
+    </script>
+    
+</body>
+</html>
