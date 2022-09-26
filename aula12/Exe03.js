@@ -15,7 +15,9 @@ var hoje = diaDaSemana.getDay()// puchar o dia de hj
 /* 
 
     O Switch case é mais usual em casos 
-    em que precisa-se saber um valor pntual
+    em que precisa-se saber um valor pontuais
+
+    Especifico par anumeros Inteiros e Strings
 
 */
 

@@ -18,14 +18,14 @@
     <script>
         function meuPais(){
             var pais = document.getElementById('Pais')
-            var PaisOrigem1 = document.getElementById('PaisOrigem')
+            var PaisOrigem = document.getElementById('PaisOrigem')
             console.log('OK')
 
             // var pais = 'Brasil'
             if(pais !== 'Brasil'){
-                PaisOrigem1.innerHTML += `<P>Seu País de origem é ${pais}</p>`
+                PaisOrigem.innerHTML += `<P>Seu País de origem é ${pais}</p>`
             }else{
-                PaisOrigem1.innerHTML += `vc é estrangeiro`
+                PaisOrigem.innerHTML += `vc é estrangeiro`
             }
         }
     </script>

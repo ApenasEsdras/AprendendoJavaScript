@@ -1,0 +1,30 @@
+
+body{
+    background: rgb(125, 181, 255);
+    display: grid;
+    place-items: center;
+}
+#Caixa{
+    background: #e0ccf5;
+    width: 600px;
+    height: 400px;
+    display: grid;
+    place-items: center;
+    border-radius: 8%;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.63);
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.63);
+    margin-bottom: 20px;
+}
+
+.Color{
+    color: wheat;
+}
+
+h2{
+    font: normal 20pt arial;
+}
