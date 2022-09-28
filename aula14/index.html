@@ -21,15 +21,23 @@
         <div class="campo">
             <p>
                 Sexo :
-                <input name="Homem" type="radio" id="Homem"  /> Homem
-                <input name="Mulher" type="radio" id="Mulher"/> Mulher
+                <input  type="radio" name="redSex" min="0"/>
+                <label for="Homem"> Homem</label>
+                <input  type="radio" name="redSex"/> 
+                <label for="Mulher"> Mulher</label>
+
+                <!-- Com o radio eu não posso chamo de forma segur apela ID mas sim pelo Nome.
+                      tenho que utilizar o document.getElementsByName('redSex') para funcionar
+                    e colo car no IF o [com o numero do arry selecionado] 
+                
+                o label serve para especificar o nome q sera exibido-->
             </p>
             
         </div>
 
         <div id="res"> <h3>Sua idade é ...</h3></div>
 
-        <img id="image" src="img/pexels-andrea-piacquadio-3831645.jpg" alt="">
+        <img id="image" src="img/question-mark-g76189fa0b_1280.png">
         <p>
             Preencha dos dados acima para ver o resultado!
         </p>

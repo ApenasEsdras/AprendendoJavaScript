@@ -26,13 +26,7 @@ img{
     margin-bottom: 20px;
 }
 
-.footer{
-    font-size: small;
-    font-style: italic;
-    
+#tabuada{
+    background: red;
+    padding: 50px;
 }
-
-/* .campo{
-    width: 300px;
-    align-items: center;
-} */
