@@ -8,6 +8,8 @@ function contar(){
     let f = Number(fim.value)
     let p = Number(passo.value)
 
+    res.innerHTML = ''
+
     if (i == 0 || f == 0){
         alert('[Err] Dados faltando')//alertar se o ini ou o fim tem valor 0, se sim ira retornar uma mensagem de alerta
     }
