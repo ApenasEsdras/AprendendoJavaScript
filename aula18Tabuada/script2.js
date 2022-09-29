@@ -6,10 +6,10 @@ function Somar(){
 
  
 
-    if(escolha.value.length == 0){
+    if(escolha.value.length == 0){//verifica se o numero de entrada e igual e 0, se for alerta a falta de 
         alert('[Err] Digite um numero!!')
     } else{
-        let n = Number(escolha.value)
+        let n = Number(escolha.value)//converter string para numero
         let c = 1
         //para poder limpar a ultima atualização
         res.innerHTML = ''
