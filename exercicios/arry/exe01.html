@@ -18,9 +18,26 @@
 
      <div>
         Numero (entre 1 e 100):
+        <!-- campo de inserção de dados -->
         <input type="number" name="fnum" id="fnum">
+
+        <!-- butão com a função adicionar() // serve para adiconar novos dados 
+            *sendo que tbm faz teste de validação de inserção de dados
+        -->
         <input type="button" value="Adicionar" onclick="adicionar()">
+        
+        <!-- Aria de exibição dos dados em uma saria SELECT com 
+            options sendo ciados direto no JavaScript
+         -->
         <br><br><select name="flista" id="flista" size="6"></select>
+        
+        <!-- botão com a função finalizar() // serve para fazer :
+            ° analise do maior valor informado && manor valor inserido,
+            ° Cauculo da soma dos valores,
+            ° Cauculo da media dos valores.
+        
+            *sendo que tbm faz teste de validação de inserção de dados
+        -->
         <br><input type="button" value="Finalizar" onclick=" finalizar()">
     </div>
 

@@ -1,8 +1,8 @@
-let num = document.querySelector('input#fnum')
-let lista = document.querySelector('select#flista')
-let res = document.querySelector('div#res')
+let num = document.querySelector('input#fnum')//chamada do fnum = aria de inserção dos dados iniciasis
+let lista = document.querySelector('select#flista')//chamada da llsta de exibição
+let res = document.querySelector('div#res')//mastrar resultados
 
-let valores = []
+let valores = []//Vetor vazia
 
 //verifica se o numero esta netre 1 e 100
 function isNumero(n){
@@ -14,7 +14,7 @@ function isNumero(n){
 }
 
 function inLista(n, l){
-    if (l.indexOf(Number(n)) != -1){
+    if (l.indexOf(Number(n)) != -1){// se o numero inserido for diferente de -1
         return true
     }else{
         return false
@@ -24,7 +24,7 @@ function inLista(n, l){
 
 //verifica se o numero é igual ou repitido e se ele e invalido
 function adicionar() {
-    if(isNumero(num.value) && !inLista(num.value, valores)){
+    if(isNumero(num.value) && !inLista(num.value, valores)){// so será adc se for vdd os dois lists&&num
        valores.push(Number(num.value))
        let item = document.createElement('Option')
        item.text = `valor ${num.value} adicionado`
